@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import Home from "../pages/Home/Home/Home";
+import PageGenerator from "../pages/Home/PageGenerator/PageGenerator";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -9,6 +10,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/page-generator",
+        element: <PageGenerator></PageGenerator>,
       },
     ],
   },
