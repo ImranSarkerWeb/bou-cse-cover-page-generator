@@ -11,6 +11,9 @@ const NavBar = () => {
         <NavLink to="/page-generator">Page Generator</NavLink>
       </li>
       <li>
+        <NavLink to="/result-checker">Result Checker</NavLink>
+      </li>
+      <li>
         <a>Contact</a>
       </li>
     </>
