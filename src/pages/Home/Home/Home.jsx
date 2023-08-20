@@ -7,7 +7,7 @@ const Home = () => {
         Uh! I am thinking about Home Page design!
       </h1>
       <Link to="page-generator" className="  btn  btn-wide btn-success">
-        Go Page Generator Page
+        Visit Page Generator Page
       </Link>
     </div>
   );
