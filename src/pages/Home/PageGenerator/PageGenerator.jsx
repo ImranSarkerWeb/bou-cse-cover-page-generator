@@ -56,16 +56,13 @@ const PageGenerator = () => {
   };
   return (
     <div className="flex gap-4 my-8">
-      <div className="w-1/4">
+      <div className="md:w-1/4 w-2/4">
         <form action="" onSubmit={handleInput} className=" flex flex-col">
           <div className="form-control">
             <label className="label">
               <span className="label-text">Document Type</span>
             </label>
-            <select
-              className="input input-bordered input-sm input-sm"
-              name="select"
-            >
+            <select className="input input-bordered input-sm" name="select">
               <option value="">Select an option</option>
               <option value="Assignment">Assignment</option>
               <option value="Lab Assignment">Lab Assignment</option>
@@ -81,7 +78,7 @@ const PageGenerator = () => {
               name="job"
               required
               placeholder="Course Title"
-              className="input input-bordered input-sm input-sm"
+              className="input input-bordered  input-sm"
             />
           </div>
 
@@ -94,7 +91,7 @@ const PageGenerator = () => {
               name="title"
               required
               placeholder="Course Title"
-              className="input input-bordered input-sm input-sm"
+              className="input input-bordered  input-sm"
             />
           </div>
 
@@ -187,7 +184,7 @@ const PageGenerator = () => {
               type="text"
               name="batch"
               required
-              placeholder="Year/Semester"
+              placeholder="Batch No"
               className="input input-bordered input-sm"
             />
           </div>
@@ -257,7 +254,7 @@ const PageGenerator = () => {
                 style={{
                   textAlign: "center",
                   color: "blue",
-                  fontSize: "26px",
+                  fontSize: "22px",
                   marginVertical: "10px",
                 }}
               >
@@ -286,12 +283,11 @@ const PageGenerator = () => {
               <Text
                 style={{
                   textAlign: "center",
-                  fontSize: "26px",
-                  textDecoration: "underline",
-                  color: "black",
+                  fontSize: "24px",
+                  color: "royalblue",
                   fontWeight: "bold",
-
-                  marginTop: "20px",
+                  marginTop: "22px",
+                  marginBottom: "22px",
                 }}
               >
                 {" "}
@@ -300,7 +296,7 @@ const PageGenerator = () => {
 
               <Text
                 style={{
-                  fontSize: "18px",
+                  fontSize: "14px",
                   color: "blue",
                   marginVertical: "10px",
                 }}
@@ -311,7 +307,7 @@ const PageGenerator = () => {
 
               <Text
                 style={{
-                  fontSize: "18px",
+                  fontSize: "14px",
                   marginVertical: "7px",
                 }}
               >
@@ -321,7 +317,7 @@ const PageGenerator = () => {
 
               <Text
                 style={{
-                  fontSize: "18px",
+                  fontSize: "14px",
                   marginTop: "10px",
                 }}
               >
@@ -331,7 +327,7 @@ const PageGenerator = () => {
 
               <Text
                 style={{
-                  fontSize: "18px",
+                  fontSize: "14px",
                   marginTop: "30px",
                   marginBottom: "8px",
                 }}
@@ -341,7 +337,7 @@ const PageGenerator = () => {
               </Text>
               <Text
                 style={{
-                  fontSize: "18px",
+                  fontSize: "14px",
                   marginBottom: "38px",
                 }}
               >
@@ -362,7 +358,7 @@ const PageGenerator = () => {
                     color: "white",
                     padding: "10px",
 
-                    fontSize: "18px",
+                    fontSize: "14px",
                   }}
                 >
                   {" "}
@@ -374,7 +370,7 @@ const PageGenerator = () => {
                     color: "white",
                     padding: "10px",
 
-                    fontSize: "18px",
+                    fontSize: "14px",
                   }}
                 >
                   {" "}
@@ -390,7 +386,7 @@ const PageGenerator = () => {
                     border: "1px solid black",
 
                     padding: "10px",
-                    fontSize: "18px",
+                    fontSize: "13px",
                   }}
                 >
                   <Text>St. Name: {inputText.name} </Text>
@@ -419,7 +415,7 @@ const PageGenerator = () => {
                     flex: 1,
                     border: "1px solid black",
                     padding: "20px",
-                    fontSize: "18px",
+                    fontSize: "13px",
                   }}
                 >
                   <Text
@@ -427,7 +423,7 @@ const PageGenerator = () => {
                       fontWeight: "800",
                     }}
                   >
-                    Name: {inputText.profName}
+                    {inputText.profName}
                   </Text>
                   <Text
                     style={{
